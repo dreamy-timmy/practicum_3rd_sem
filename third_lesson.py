@@ -38,6 +38,7 @@ def third():
     inversed_P = np.linalg.inv(P)
     determinant *= np.linalg.det(inversed_P)
     print(determinant)
+
 # third()
 # 4
 from scipy import stats
@@ -65,6 +66,7 @@ def fifth():
         std = np.std(sample)
         print(f'mean = {mean}, mode = {mode}, median = {median}, min = {min}, max = {max}, standard = {round(std)}')
 # fifth()
+
 # 6
 def sixth():
     print(stats.chisquare(normal))

@@ -51,7 +51,7 @@ def fifth():
         return - 2 * x_1 - 7
 
     b = (0, np.inf)
-    bnds = (b, b) # почему?
+    bnds = (b, b) 
     con1 = {'type': 'ineq', 'fun': constraint_1}
     con2 = {'type': 'ineq', 'fun': constraint_2}
     cons = [con1, con2]
@@ -64,3 +64,6 @@ def fifth():
     print(sol)
     
 # fifth()
+
+def fifth_f(x_1, x_2):
+        return (x_1 - 4) ** 2 + (x_2 - 2) ** 2
